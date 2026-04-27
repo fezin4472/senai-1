@@ -1,9 +1,8 @@
-let preco, qtd
-let vtotal
+let salario, dias, salariodiario
 
-qtd = Number(prompt("quantidade"))
-preco = Number(prompt("preço R$"))
+salario = Number(prompt("salario"))
+dias = Number(prompt("dias trabalhados"))
 
-vtotal = qtd * preco
+salariodiario = salario / dias
 
-console.log("hfdsjdsashf R$" + vtotal)
+alert("gjhsgdsytfgdf" + salariodiario)
