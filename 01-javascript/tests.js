@@ -1,8 +1,8 @@
-let salario, dias, salariodiario
+let pbruto, tara, carga
 
-salario = Number(prompt("salario"))
-dias = Number(prompt("dias trabalhados"))
+pbruto = Number(prompt("pes brut"))
+tara = Number(prompt("tara"))
 
-salariodiario = salario / dias
+carga = pbruto - tara
 
-alert("gjhsgdsytfgdf" + salariodiario)
+alert("fjgjgnsjnfds " + carga)
