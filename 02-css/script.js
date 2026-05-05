@@ -1,13 +1,12 @@
-function calculatetemperature(){
-    let celsius, fahrenheit
+function calculatethings(){
+    let idade
 
-    celsius = Number(prompt("temperature in celsius"))
+    idade = Number(prompt("idade"))
 
-    fahrenheit = celsius*9/5+32
-
-    if(fahrenheit <= 64.4){
-        alert("get a jacket")
+    if (idade <= 17){
+        alert("nein")
     }else{
-        alert("turn on the air conditioning system on your house or else u melt :)")
-    }document.getElementById("result").innerHTML = fahrenheit
+        alert("ja")
+    }
+    document.getElementById("result").innerHTML = idade
 }
