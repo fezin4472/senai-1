@@ -1,12 +1,25 @@
 function calculatethings(){
-    let idade
+    let number, week
 
-    idade = Number(prompt("idade"))
+    number = Number(prompt("number 1-7"))
 
-    if (idade <= 17){
-        alert("nein")
+    if(number == 1){
+        week = "sunday"
+    }else if(number == 2){
+        week = "monday"
+    }else if(number == 3){
+        week = "thursday"
+    }else if(number == 4){
+        week = "wednesday"
+    }else if(number == 5){
+        week = "thursday"
+    }else if(number == 6){
+        week = "friday"
+    }else if(number == 7){
+        week = "saturday"
     }else{
-        alert("ja")
+        week = "????????????????????"
     }
-    document.getElementById("result").innerHTML = idade
+
+    document.getElementById("result").innerHTML = week
 }
