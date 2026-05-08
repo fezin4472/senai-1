@@ -1,25 +1,12 @@
 function calculatethings(){
-    let number, week
+    let win, draw, points
 
-    number = Number(prompt("number 1-7"))
+    win = Number(prompt("wins"))
+    draw = Number(prompt("draws"))
 
-    if(number == 1){
-        week = "sunday"
-    }else if(number == 2){
-        week = "monday"
-    }else if(number == 3){
-        week = "thursday"
-    }else if(number == 4){
-        week = "wednesday"
-    }else if(number == 5){
-        week = "thursday"
-    }else if(number == 6){
-        week = "friday"
-    }else if(number == 7){
-        week = "saturday"
-    }else{
-        week = "????????????????????"
-    }
+    win = win + 3
+    draw = draw + 1
+    points = win + draw
 
-    document.getElementById("result").innerHTML = week
+    result.innerHTML = points
 }
