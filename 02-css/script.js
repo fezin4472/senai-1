@@ -1,12 +1,17 @@
 function calculatethings(){
-    let win, draw, points
+    let seconds, minutes, hours, days, distance
+    const velocity = 300000
 
-    win = Number(prompt("wins"))
-    draw = Number(prompt("draws"))
+    seconds = Number(prompt("time in seconds"))
 
-    win = win + 3
-    draw = draw + 1
-    points = win + draw
+    distance = velocity * seconds
+    minutes = seconds / 60
+    hours = minutes / 60
+    days = hours / 24
 
-    result.innerHTML = points
+    result.innerHTML = distance
+    alert(minutes)
+    alert(hours)
+    alert(days)
+    console.log("jeg liker tog")
 }
