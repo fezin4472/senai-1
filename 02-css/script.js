@@ -1,17 +1,9 @@
 function calculatethings(){
-    let seconds, minutes, hours, days, distance
-    const velocity = 300000
+    let number, numero, h
 
-    seconds = Number(prompt("time in seconds"))
+    number = Number(prompt("hhd"))
+    numero = Number(prompt("dhghkhg"))
 
-    distance = velocity * seconds
-    minutes = seconds / 60
-    hours = minutes / 60
-    days = hours / 24
-
-    result.innerHTML = distance
-    alert(minutes)
-    alert(hours)
-    alert(days)
-    console.log("jeg liker tog")
+    h = numero + number
+    alert(h)
 }
