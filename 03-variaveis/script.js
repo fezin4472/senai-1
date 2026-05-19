@@ -17,8 +17,14 @@ function division(){
     document.getElementById('p-count').innerHTML = number
 }
 
+let total = 0
 function licenseandregistration(){
     let thing = Number(document.getElementById('inputsell').value)
+    
+    total = total + thing
 
-    alert(thing)
+    document.getElementById('list').innerHTML += 'R$' + thing.toFixed(2) + '<br>'
+
+    document.getElementById('p-total').innerHTML = 'R$' + total.toFixed(2)
+    document.getElementById('inputsell').value = ''
 }
