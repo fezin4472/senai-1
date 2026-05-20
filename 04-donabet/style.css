@@ -1,0 +1,120 @@
+body {
+    margin-top: 30px;
+    background: black;
+    border: 4px dashed lime;
+    padding: 20px;
+    text-align: center;
+    font-family: cursive;
+    font-size: 25px;
+    min-height: 80px;
+}
+
+.container{
+    width: 900px;
+    margin: 20px auto;
+    border: 6px double #00ffcc;
+    background: #111144;
+    padding: 20px;
+    box-shadow: 0 0 20px #00ffcc;
+}
+
+h1{
+    text-align: center;
+    font-size: 48px;
+    color: yellow;
+    text-shadow: 3px 3px red;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink{
+    50% {
+    opacity: 0.7;
+    }
+}
+
+marquee{
+    color: white;
+    font-size: 20px;
+    background: red;
+    padding: 8px;
+    border: 3px dashed yellow;
+}
+
+.dinos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.dino{
+    background: #220044;
+    border: 3px ridge #00ffcc;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.dino:hover{
+    background: #440088;
+}
+
+.emoji{
+    font-size: 50px;
+}
+
+.result{
+    margin-top: 30px;
+    background-color: black;
+    color: white;
+    border: 4px dashed lime;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+    min-height: 80px;
+}
+
+button{
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 22px;
+    background: lime;
+    border: 4px outset white;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+button:hover{
+    background: yellow;
+}
+
+.footer{
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+
+.counter{
+    margin-top: 10px;
+    font-size: 20px;
+    color: cyan;
+    text-align: center;
+}
+
+.gif{
+    text-align: center;
+    font-size: 80px;
+    margin-top: 10px;
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin{
+    from {
+    transform: rotate(0deg);
+    }
+    to {
+    transform: rotate(360deg);
+    }
+}

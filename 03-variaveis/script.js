@@ -28,3 +28,10 @@ function licenseandregistration(){
     document.getElementById('p-total').innerHTML = 'R$' + total.toFixed(2)
     document.getElementById('inputsell').value = ''
 }
+
+const numbers = ["en", "to", "tre", "fire", "fem", "seks", "syv", "åtte", "ni", "ti"]
+
+function forloop(){
+    for (let i = 0; i < numbers.length; i++)
+        document.getElementById('thing').innerHTML += numbers[i] + '<br>'
+}
