@@ -1,5 +1,29 @@
 body{
+    margin-top: 30px;
     background-color: black;
+    border: 4px dashed gold;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    min-height: 80px;
+}
+
+.idk{
+    width: 900px;
+    margin: 20px auto;
+    border: 6px double gold;
+    background: red;
+    padding: 20px;
+    box-shadow: 0 0 20px palegoldenrod;
+}
+
+marquee{
+    color: white;
+    font-size: 20px;
+    background: red;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 8px;
+    border: 3px dashed yellow;
 }
 
 p{
@@ -28,6 +52,10 @@ button{
     border: none;
 }
 
+button:hover{
+    background: orangered;
+}
+
 #list{
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -35,4 +63,5 @@ button{
 
 #thing{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
 }

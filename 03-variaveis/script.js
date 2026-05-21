@@ -35,3 +35,40 @@ function forloop(){
     for (let i = 0; i < numbers.length; i++)
         document.getElementById('thing').innerHTML += numbers[i] + '<br>'
 }
+
+function resetrolls(){
+    document.getElementById('p-rolls').innerHTML = "total rolls: 0"
+}
+
+const min = 1
+let max
+
+function tetradice(min, max){
+    max = 4
+    return Math.floor(Math.random() * (max - min + 1))
+}
+
+function tetradice(min, max){
+    max = 4
+    return Math.floor(Math.random() * (max - min + 1))
+}
+
+function tetradice(min, max){
+    max = 4
+    return Math.floor(Math.random() * (max - min + 1))
+}
+
+function tetradice(min, max){
+    max = 4
+    return Math.floor(Math.random() * (max - min + 1))
+}
+
+function tetradice(min, max){
+    max = 4
+    return Math.floor(Math.random() * (max - min + 1))
+}
+
+function tetradice(min, max){
+    max = 4
+    return Math.floor(Math.random() * (max - min + 1))
+}
