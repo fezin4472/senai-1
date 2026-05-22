@@ -36,39 +36,34 @@ function forloop(){
         document.getElementById('thing').innerHTML += numbers[i] + '<br>'
 }
 
-function resetrolls(){
-    document.getElementById('p-rolls').innerHTML = "total rolls: 0"
+let roll
+
+function tetradice(){
+    roll = Math.floor(Math.random() * 4) + 1
+    document.getElementById('p-lastroll').innerHTML = 'last roll: ' + roll
 }
 
-const min = 1
-let max
-
-function tetradice(min, max){
-    max = 4
-    return Math.floor(Math.random() * (max - min + 1))
+function traddice(){
+    roll = Math.floor(Math.random() * 6) + 1
+    document.getElementById('p-lastroll').innerHTML = 'last roll: ' + roll
 }
 
-function tetradice(min, max){
-    max = 4
-    return Math.floor(Math.random() * (max - min + 1))
+function octadice(){
+    roll = Math.floor(Math.random() * 8) + 1
+    document.getElementById('p-lastroll').innerHTML = 'last roll: ' + roll
 }
 
-function tetradice(min, max){
-    max = 4
-    return Math.floor(Math.random() * (max - min + 1))
+function decadice(){
+    roll = Math.floor(Math.random() * 10) + 1
+    document.getElementById('p-lastroll').innerHTML = 'last roll: ' + roll
 }
 
-function tetradice(min, max){
-    max = 4
-    return Math.floor(Math.random() * (max - min + 1))
+function dodecadice(){
+    roll = Math.floor(Math.random() * 12) + 1
+    document.getElementById('p-lastroll').innerHTML = 'last roll: ' + roll
 }
 
-function tetradice(min, max){
-    max = 4
-    return Math.floor(Math.random() * (max - min + 1))
-}
-
-function tetradice(min, max){
-    max = 4
-    return Math.floor(Math.random() * (max - min + 1))
+function icosadice(){
+    roll = Math.floor(Math.random() * 20) + 1
+    document.getElementById('p-lastroll').innerHTML = 'last roll: ' + roll
 }
