@@ -8,34 +8,49 @@
     <title>variables</title>
 </head>
 <body>
-    <h1>
-        <p>counting</p>
-    </h1>
-    <hr>
-    <h2>
-        <p>chapa</p>
-    </h2>
-    <p id="p-total">R$0.00</p>
-    <p>valor venda R$</p>
-    <input id="inputsell" type="text">
-    <button onclick="licenseandregistration()">cadastration</button>
-    <p id="p-total"></p>
-    <div>
-        <p id="list"></p>
+    <div class="divizione">
+        <h1>
+            <p>counting</p>
+        </h1>
+        <hr>
+        <marquee scrollamount="10">CHAPA</marquee>
+        <p id="p-total">R$0.00</p>
+        <p>valor venda R$</p>
+        <input id="inputsell" type="text">
+        <button onclick="licenseandregistration()">cadastration</button>
+        <p id="p-total"></p>
+        <div>
+            <p id="list"></p>
+        </div>
+        <hr>
+        <button onclick="addition()">+</button>
+        <button onclick="substraction()">-</button>
+        <button onclick="multiplication()">*</button>
+        <button onclick="division()">/</button>
+        <p id="p-count">
+            0
+        </p>
+        <hr>
+        <div>
+            <h3>
+                <p>dices n stuff 🎲</p>
+            </h3>
+            <button onclick="resetrolls()">reset</button>
+            <p id="p-rolls">total rolls: 0</p>
+            <p id="p-random">last roll: 0</p>
+            <button onclick="tetradice()">D4</button>
+            <button onclick="traddice()">D6</button>
+            <button onclick="octadice()">D8</button>
+            <button onclick="pentadice()">D10</button>
+            <button onclick="dodecadice()">D12</button>
+            <button onclick="icosadice()">D20</button>
+        </div>
+        <hr>
+        <button onclick="forloop()">for loop</button>
+        <h4>
+            <p id="thing"></p>
+        </h4>
     </div>
-    <hr>
-    <button onclick="addition()">+</button>
-    <button onclick="substraction()">-</button>
-    <button onclick="multiplication()">*</button>
-    <button onclick="division()">/</button>
-    <p id="p-count">
-        0
-    </p>
-    <hr>
-    <button onclick="forloop()">for loop</button>
-    <h3>
-        <p id="thing"></p>
-    </h3>
     <script src="script.js"></script>
 </body>
 </html>

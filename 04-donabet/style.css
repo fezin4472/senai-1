@@ -1,4 +1,4 @@
-body {
+body{
     margin-top: 30px;
     background: black;
     border: 4px dashed lime;
@@ -57,7 +57,7 @@ marquee{
 }
 
 .dino:hover{
-    background: #440088;
+    background: #330066;
 }
 
 .emoji{
