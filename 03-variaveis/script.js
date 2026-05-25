@@ -35,17 +35,6 @@ function forloop(){
         document.getElementById('thing').innerHTML += numbers[i] + '<br>'
 }
 
-<<<<<<< HEAD
-let roll, result
-let totalrolls
-
-=======
->>>>>>> 5b092bb2bd48b0d9aaebf4c884918de7822ce056
-function resetrolls(){
-    document.getElementById('p-rolls').innerHTML = "total rolls: 0"
-}
-
-<<<<<<< HEAD
 function tetradice(){
     roll = Math.floor(Math.random() * 4) + 1;
     result = document.getElementById('p-random')
@@ -80,37 +69,4 @@ function icosadice(){
     roll = Math.floor(Math.random() * 20) + 1;
     result = document.getElementById('p-random')
     result.innerHTML = 'last roll: ' + roll
-=======
-const min = 1
-let max
-
-function tetradice(min, max){
-    max = 4
-    return Math.floor(Math.random() * (max - min + 1))
-}
-
-function tetradice(min, max){
-    max = 4
-    return Math.floor(Math.random() * (max - min + 1))
-}
-
-function tetradice(min, max){
-    max = 4
-    return Math.floor(Math.random() * (max - min + 1))
-}
-
-function tetradice(min, max){
-    max = 4
-    return Math.floor(Math.random() * (max - min + 1))
-}
-
-function tetradice(min, max){
-    max = 4
-    return Math.floor(Math.random() * (max - min + 1))
-}
-
-function tetradice(min, max){
-    max = 4
-    return Math.floor(Math.random() * (max - min + 1))
->>>>>>> 5b092bb2bd48b0d9aaebf4c884918de7822ce056
 }
