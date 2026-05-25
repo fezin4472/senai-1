@@ -23,7 +23,7 @@ function licenseandregistration(){
     
     total = total + thing
 
-    document.getElementById('list').innerHTML += 'R$' + thing.toFixed(2) + '<br>'
+    document.getElementById('list').innerHTML += 'R$' + thing.toFixed(2) + '<br>'gi
     document.getElementById('p-total').innerHTML = 'R$' + total.toFixed(2)
     document.getElementById('inputsell').value = ''
 }
