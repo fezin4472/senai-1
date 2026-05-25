@@ -1,6 +1,10 @@
 body{
     margin-top: 30px;
+<<<<<<< HEAD
     background: black;
+=======
+    background-color: black;
+>>>>>>> 5b092bb2bd48b0d9aaebf4c884918de7822ce056
     border: 4px dashed gold;
     padding: 20px;
     text-align: center;
@@ -8,7 +12,11 @@ body{
     min-height: 80px;
 }
 
+<<<<<<< HEAD
 .divizione{
+=======
+.idk{
+>>>>>>> 5b092bb2bd48b0d9aaebf4c884918de7822ce056
     width: 900px;
     margin: 20px auto;
     border: 6px double gold;
@@ -21,6 +29,10 @@ marquee{
     color: white;
     font-size: 20px;
     background: red;
+<<<<<<< HEAD
+=======
+    font-family: 'Courier New', Courier, monospace;
+>>>>>>> 5b092bb2bd48b0d9aaebf4c884918de7822ce056
     padding: 8px;
     border: 3px dashed yellow;
 }
@@ -62,4 +74,5 @@ button:hover{
 
 #thing{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
 }
