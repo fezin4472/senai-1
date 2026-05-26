@@ -35,38 +35,14 @@ function forloop(){
         document.getElementById('thing').innerHTML += numbers[i] + '<br>'
 }
 
-function tetradice(){
-    roll = Math.floor(Math.random() * 4) + 1;
-    result = document.getElementById('p-random')
-    result.innerHTML = 'last roll: ' + roll
+function resetrolls(){
+    document.getElementById('p-rolls').innerHTML = 'total rolls: 0'
 }
 
-function traddice(){
-    roll = Math.floor(Math.random() * 6) + 1;
-    result = document.getElementById('p-random')
-    result.innerHTML = 'last roll: ' + roll
-}
+let roll, result
 
-function octadice(){
-    roll = Math.floor(Math.random() * 8) + 1;
-    result = document.getElementById('p-random')
-    result.innerHTML = 'last roll: ' + roll
-}
-
-function pentadice(){
-    roll = Math.floor(Math.random() * 10) + 1;
-    result = document.getElementById('p-random')
-    result.innerHTML = 'last roll: ' + roll
-}
-
-function dodecadice(){
-    roll = Math.floor(Math.random() * 12) + 1;
-    result = document.getElementById('p-random')
-    result.innerHTML = 'last roll: ' + roll
-}
-
-function icosadice(){
-    roll = Math.floor(Math.random() * 20) + 1;
+function dicerolls(number){
+    roll = Math.floor(Math.random() * number) + 1;
     result = document.getElementById('p-random')
     result.innerHTML = 'last roll: ' + roll
 }

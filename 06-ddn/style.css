@@ -1,0 +1,19 @@
+body{
+    background: pink;
+    font-family: "times";
+}
+        
+div{
+    border: 3px, dashed, black;
+    text-align: center;
+    padding: 20px;
+}
+        
+marquee{
+    border: 4px, dashed, red;
+    padding: 10px;
+}
+        
+button{
+    background: red;
+}
