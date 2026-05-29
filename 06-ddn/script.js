@@ -1,5 +1,5 @@
 function amor(){
-    document.getElementById('p-message').innerHTML = "eu te amo"
+    document.getElementById('p-message').innerHTML = "eu te amo :)"
 }
         
 function removal(){

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 body{
     margin-top: 30px;
     background: black;
@@ -64,4 +66,30 @@ button:hover{
 #thing{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 18px;
+}
+
+.lang{
+    margin: 0 auto;
+}
+
+.button_lang{
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.25em 0em;
+    border-radius: 10px;
+    width: 5em;
+}
+
+.button_lang:hover{
+    background: orangered;
+}
+
+.current_lang{
+    background: orangered;
+}
+
+.bulgarian{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }

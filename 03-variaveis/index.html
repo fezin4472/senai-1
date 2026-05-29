@@ -46,10 +46,33 @@
             <button onclick="dicerolls(20)">D20</button>
         </div>
         <hr>
+        <div>
+            <h4>
+                <p>change the language</p>
+            </h4>
+            <div class="demo">
+                <div>
+                    <table class="lang">
+                        <tr>
+                            <td class="tdlang">
+                                <span id="en" class="button_lang current_lang">EN</span>
+                            </td>
+                            <td class="tdlang"><span id="de" class="button_lang">DE</span></td>
+                            <td class="tdlang"><span id="bu" class="button_lang">BU</span></td>
+                            <td class="tdlang"><span id="no" class="button_lang">NO</span></td>
+                        </tr>
+                    </table>
+                    <p class="translation english" id="translate">
+                        this text will change
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr>
         <button onclick="forloop()">for loop</button>
-        <h4>
+        <h5>
             <p id="thing"></p>
-        </h4>
+        </h5>
     </div>
     <script src="script.js"></script>
 </body>

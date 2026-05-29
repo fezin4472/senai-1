@@ -46,3 +46,70 @@ function dicerolls(number){
     result = document.getElementById('p-random')
     result.innerHTML = 'last roll: ' + roll
 }
+
+var english = document.getElementById("en"),
+    german = document.getElementById("de"),
+    bulgarian = document.getElementById("bu"),
+    norwegian = document.getElementById("no"),
+    change_text = document.getElementById("translate");
+
+english.addEventListener("click", function(){
+        change(english, german, bulgarian, norwegian);
+    }, false
+);
+
+german.addEventListener("click", function(){
+        change(german, english, bulgarian, norwegian);
+    }, false
+);
+
+bulgarian.addEventListener("click", function(){ 
+        change(bulgarian, english, german, norwegian);
+    }, false
+);
+
+norwegian.addEventListener("click", function(){
+        change(norwegian, english, german, bulgarian)
+    }, false
+);
+
+function change(lang_on, lang_off1, lang_off2, lang_off3){
+    if(!lang_on.classList.contains("current_lang")){
+        lang_on.classList.add("current_lang");
+        lang_off1.classList.remove("current_lang");
+        lang_off2.classList.remove("current_lang");
+        lang_off3.classList.remove("current_lang");
+    }
+
+    if(lang_on.innerHTML == "EN"){
+        change_text.classList.add("english");
+        change_text.classList.remove("german");
+        change_text.classList.remove("bulgarian");
+        change_text.classList.remove("norwegian");
+        change_text.innerHTML = "this text will change";
+    }
+
+    else if(lang_on.innerHTML == "DE"){
+        change_text.classList.add("german");
+        change_text.classList.remove("english");
+        change_text.classList.remove("bulgarian");
+        change_text.classList.remove("norwegian");
+        change_text.innerHTML = "Dieser Text ist jetzt auf Deutsch."
+    }
+
+    else if(lang_on.innerHTML == "BU"){
+        change_text.classList.add("bulgarian");
+        change_text.classList.remove("english");
+        change_text.classList.remove("german");
+        change_text.classList.remove("norwegian");
+        change_text.innerHTML = "Този текст вече е на български"
+    }
+
+    else if(lang_on.innerHTML == "NO"){
+        change_text.classList.add("norwegian");
+        change_text.classList.remove("english");
+        change_text.classList.remove("german");
+        change_text.classList.remove("bulgarian");
+        change_text.innerHTML = "denne teksten er nå på norsk"
+    }
+}
