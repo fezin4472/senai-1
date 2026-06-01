@@ -2,7 +2,8 @@ const dinos = [
     { nome: 'T-Rex', },
     { nome: 'Velociraptor' },
     { nome: 'Triceratops' },
-    { nome: 'Pterodáctilo' }
+    { nome: 'Pterodáctilo' },
+    { nome: 'Brontosaurus' }
 ];
 
 let selected = null;
@@ -19,12 +20,12 @@ function selectDino(nome){
 
 function spinGame(){
     if (!selected) {
-    alert('Escolha um dinossauro primeiro!');
+    alert('escolher dinossauro');
     return;
     }
 
     if (coins < 10) {
-    alert('Você ficou sem DinoCoins!');
+    alert('dale ctrl + r ce perdeu tudo mermao');
     return;
     }
 
@@ -37,13 +38,13 @@ function spinGame(){
     coins += 50;
     }
 
-    document.getElementById('coins').innerText = coins;
+    document.getElementById('coins').innerText = 'D$' + coins;
 
     document.getElementById('result').innerHTML =
     '<h2>DINOSSAURO SORTEADO:</h2>' +
     '<div style="font-size:80px">' + winner.nome + '</div>' +
     '<h1>' + winner.nome + '</h1>' +
     (ganhou
-        ? '<p style="color:lime">VOCÊ GANHOU 50 DINOCOINS WOOOOOOOOOOOOOOOOOOOOOOOOOOOO</p>'
+        ? '<p style="color:lime">VOCÊ GANHOU D$50 WOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOGUIDSHGSFFBSJFJK</p>'
         : '<p style="color:red">tente outra veeeeeeeeeeeeeeeeeeez</p>');
 }

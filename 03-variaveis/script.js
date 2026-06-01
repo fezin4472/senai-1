@@ -86,7 +86,7 @@ function change(lang_on, lang_off1, lang_off2, lang_off3){
         change_text.classList.remove("german");
         change_text.classList.remove("bulgarian");
         change_text.classList.remove("norwegian");
-        change_text.innerHTML = "this text will change";
+        change_text.innerHTML = "the text is now in english";
     }
 
     else if(lang_on.innerHTML == "DE"){

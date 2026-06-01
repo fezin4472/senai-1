@@ -88,7 +88,25 @@ button:hover{
     background: orangered;
 }
 
+.english{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.german{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
 .bulgarian{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.norwegian{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
