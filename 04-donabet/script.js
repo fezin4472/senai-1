@@ -3,7 +3,8 @@ const dinos = [
     { nome: 'Velociraptor' },
     { nome: 'Triceratops' },
     { nome: 'Pterodáctilo' },
-    { nome: 'Brontosaurus' }
+    { nome: 'Brontosaurus' },
+    { nome: 'Argentinosaurus' }
 ];
 
 let selected = null;
@@ -18,24 +19,31 @@ function selectDino(nome){
     '<b>' + nome + '</b>';
 }
 
+let total
+
 function spinGame(){
+    let bet = Number(document.getElementById('i-bet').value)
+    total += bet
+    
     if (!selected) {
-    alert('escolher dinossauro');
+        alert('escolher dinossauro');
     return;
     }
 
     if (coins < 10) {
-    alert('dale ctrl + r ce perdeu tudo mermao');
-    return;
+        alert('dale ctrl + r ce perdeu tudo mermao');
     }
-
-    coins -= 10;
 
     const winner = dinos[Math.floor(Math.random() * dinos.length)];
     const ganhou = winner.nome === selected.nome;
+    const perdeu = winner.nome
 
-    if (ganhou) {
-    coins += 50;
+    if(perdeu){
+        coins -= bet
+    }
+
+    if (ganhou){
+        coins = bet *= 2;
     }
 
     document.getElementById('coins').innerText = 'D$' + coins;
@@ -45,6 +53,6 @@ function spinGame(){
     '<div style="font-size:80px">' + winner.nome + '</div>' +
     '<h1>' + winner.nome + '</h1>' +
     (ganhou
-        ? '<p style="color:lime">VOCÊ GANHOU D$50 WOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOGUIDSHGSFFBSJFJK</p>'
+        ? '<p style="color:lime">VOCÊ GANHOU WOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOGUIDSHGSFFBSJFJK</p>'
         : '<p style="color:red">tente outra veeeeeeeeeeeeeeeeeeez</p>');
 }

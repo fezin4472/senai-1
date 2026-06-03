@@ -16,6 +16,7 @@
 
     <div class="counter">
       DinoCoins: <span id="coins">D$100</span>
+      <p>entre a aposta:<input type="text" id="i-bet"></p>
     </div>
 
     <div class="dinos">
@@ -38,10 +39,14 @@
       <div class="dino" onclick="selectDino('Brontosaurus')">
         <p>Brontosaurus</p>
       </div>
+
+      <div class="dino" onclick="selectDino('Argentinosaurus')">
+        <p>Argentinosaurus</p>
+      </div>
     </div>
 
     <div style="text-align:center;">
-      <button onclick="spinGame()">🎰 GIRAR A SORTE 🎰</button>
+      <button onclick="spinGame()">GIRAR A SORTE OU O AZAR</button>
     </div>
 
     <div class="result" id="result">
