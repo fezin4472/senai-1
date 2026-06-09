@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 body{
     background: pink;
     font-family: 'Times New Roman', Times, serif;
 }
         
 div{
-    border: 3px, dashed, black;
+    border: 3px, dashed, #ffffff;
     text-align: center;
     padding: 20px;
 }
@@ -38,4 +40,10 @@ button:active{
     inset 1px 1px #292929,
     inset -2px -2px #ffffff,
     inset 2px 2px rgb(158, 158, 158);
+}
+
+p{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }

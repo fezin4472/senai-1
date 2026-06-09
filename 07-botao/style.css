@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+h1{
+    font-family: cursive;
+}
+
 .btn-1{
     position: relative;
     cursor: pointer;
@@ -193,32 +199,7 @@
     border: none;
     color: #ffffff;
     font-size: 16px;
-    animation: rotazione 5000ms linear infinite;
 }
-
-.btn-4::after{
-    content: "";
-    position: absolute;
-    z-index: 1;
-    inset: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background-color: #c0c0c0;
-}
-
-.btn-4::before{
-    content: "";
-    position: absolute;
-    z-index: -1;
-    inset: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #000000;
-}   
 
 .btn-4:hover{
     background: #0000ff;
@@ -227,18 +208,58 @@
     cursor: pointer;
 }
 
-@keyframes rotazione{
-    from{
-        transform: rotate(0deg);
-    }
-
-    to{
-        transform: rotate(360deg);
-    }
-}
-
 .btn-4:active{
     background: darkblue;
     box-shadow: 0 0 10px #c0c0c0 inset;
     transform: scale(0.95);
+}
+
+.btn-5{
+    background: skyblue;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.btn-5::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #000000;
+    opacity: 0.67;
+    height: 3px;
+}
+
+.btn-5::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #000000;
+    opacity: 0.33;
+    height: 6px;
+}
+
+.btn-5:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.btn-5:active{
+    transform: scale(0.95);
+}
+
+.textTWO{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
