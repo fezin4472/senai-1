@@ -56,6 +56,14 @@ button{
 
 button:hover{
     background: orangered;
+    transform: scale(1.05);
+    box-shadow: 0 3px 6px black;
+}
+
+button:active{
+    background: red;
+    transform: scale(0.95);
+    box-shadow: 0 0 3px inset whitesmoke;
 }
 
 #list{
@@ -84,8 +92,12 @@ button:hover{
     background: orangered;
 }
 
+.button_lang:active{
+    background: goldenrod;
+}
+
 .current_lang{
-    background: orangered;
+    background: gold;
 }
 
 .english{

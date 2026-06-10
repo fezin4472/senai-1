@@ -35,6 +35,10 @@ function forloop(){
         document.getElementById('thing').innerHTML += numbers[i] + '<br>'
 }
 
+function removetext(){
+    document.getElementById('thing').innerHTML = " "
+}
+
 function resetrolls(){
     document.getElementById('p-rolls').innerHTML = 'total rolls: 0'
 }
