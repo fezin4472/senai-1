@@ -35,6 +35,13 @@ function forloop(){
         document.getElementById('thing').innerHTML += numbers[i] + '<br>'
 }
 
+const script = ["for", "(", "let", " ", "i", " ", "=", " ", "0", ";", " ", "i", " ", "<", " ", "numbers.length", ";", " ", "i++", ")"]
+
+function whatisgoingon(){
+    for (let i = 0; i < script.length; i++)
+        document.getElementById('thing').innerHTML += script[i]
+}
+
 function removetext(){
     document.getElementById('thing').innerHTML = " "
 }
