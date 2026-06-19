@@ -83,22 +83,12 @@ function nwodtnuocountdownelihwhile(){
 }
 
 function factor(){
-    let n = Number(prompt("BOTAR NUMERO"))
-    let result
-}
-
-function givennumberfor(){
-    let numero = Number(prompt("digitar um numero por favor"))
-    for(i = 0; i < numero; i++){
-        document.getElementById('text').innerHTML += i + "<br>"
-    }
-}
-
-function givennumberwhile(){
-    let oremun = Number(prompt("gfghdfgdfjd"))
-    while(i < oremun){
+    let n = Number(prompt("digitar valor"))
+    let resultado = 1
+    while(i < n){
         i++
-        document.getElementById('text').innerHTML += i + "<br>"
+        resultado *= i
+        document.getElementById('text').innerHTML += resultado + "<br>"
     }
 }
 
