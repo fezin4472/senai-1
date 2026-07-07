@@ -197,6 +197,7 @@ function funcoes(){
     exercicioxx[5] + " que é bem longe de " + exercicioxx[1] + ". Tem até um circuito de rallycross chamado de 'Lånkebanen' que sedia o campeonato Europeu de rallycross desde 2011 e o mundial de rallycross de 2014 a 2025 quando o campeonato foi substituído com o europeu (um dia eu vou para " 
     + exercicioxx[5] + " e ver uma corrida de rallycross confia em mim eu vou ser top 50 no beach e fazer isso hhehehehehhehehe). E também estou aprendendo a falar alemão, eu gostaria de ir para a alemanha e visitar " + 
     exercicioxx[2] + " que é onde a fabrica da volkswagen na alemanha é, e também gostaria ir para " + 
-    exercicioxx[3] + " no japão (capital da província de aichi), 25 kilometros nordeste da fabrica da toyota."
+    exercicioxx[3] + " no japão (capital da província de aichi), 25 kilometros nordeste da fabrica da toyota. É onde o museu da toyota e um museu de trens da Central Japan Railway Company (JR Central) ficam, e tem até restaurante brasileiro em " + 
+    exercicioxx[3] + " chamado Ossu Brasil"
 }
 

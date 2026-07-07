@@ -82,4 +82,24 @@ function exerciseten(){
     }
 }
 
-function exerciseeleven(){}
+function exerciseeleven(){
+    let serie
+    for(i = 1; i <= 10; i++){
+        serie = 1 / i
+        document.getElementById('text').innerHTML = serie + "<br>"
+    }
+}
+
+function exercisetwelve(){
+    const numbah = [];
+    alert("antes de você dar uma lista de numeros, vai no google e digite 'random number generator' para ver quantos numeros você vai dar")
+    let lista = Number(prompt("quantos numeros vai ter nessa lista?"))
+    do{
+        let numero = Number(prompt("digite um numero"))
+        numbah.push(numero)
+        i++
+    }while(i < lista)
+    for(i = 0; i < numbah.length; i++){
+        document.getElementById('text').innerHTML += numbah[i] + "<br>"
+    }
+}
