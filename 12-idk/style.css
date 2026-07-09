@@ -22,6 +22,14 @@ button{
     font-weight: 600;
 }
 
+#add{
+    margin-bottom: 3px;
+}
+
+#bota{
+    margin-bottom: 3px;
+}
+
 #indice{
     margin-top: 3px;
 }
@@ -43,4 +51,5 @@ button{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
+    margin-bottom: 3px;
 }
