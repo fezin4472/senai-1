@@ -13,7 +13,12 @@ const produtosesportivos = [
     "Kimono de Judô",
     "Óculos de Natação",
     "Skate",
-    "Prancha de Surf"
+    "Prancha de Surf",
+    "Esqui",
+    "Sunga",
+    "Trampolim de Ginástica",
+    "Taco de Golfe",
+    "Bandana"
 ];
 
 const lista = document.getElementById("lista");
