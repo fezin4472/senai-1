@@ -48,7 +48,7 @@ function botarlista(){
 function adicionar(){
     const produto = namm.value.trim();
 
-    if (produto === "") {
+    if (produto === ""){
         return;
     }
 

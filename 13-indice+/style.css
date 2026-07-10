@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&display=swap');
+
+body{
+    font-family: "Google Sans Code", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "MONO" 1;
+    background: #fff;
+    color: #000;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 18px;
+}
+
+div.array-item{
+    border: 1px solid #000;
+    padding: 4px 8px;
+    margin: 4px 0;
+}
+div.step{
+    border: 1px solid #000;
+    padding: 8px;
+    margin: 8px 0;
+}
+div.resultado{
+    border: 1px solid #000;
+    padding: 8px;
+    margin: 8px 0;
+}
+button{
+    font-family: monospace;
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+    padding: 6px 12px;
+    cursor: pointer;
+}
