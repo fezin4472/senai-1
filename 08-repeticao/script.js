@@ -103,3 +103,15 @@ function exercisetwelve(){
         document.getElementById('text').innerHTML += numbah[i] + "<br>"
     }
 }
+
+function pergunta(){
+    let pedidopromo = 0;
+
+    for(i = 1; i <= 10; i++){
+        if(i % 2 === 0 && i > 4){
+            pedidopromo++
+        }
+    }
+
+    document.getElementById('text').innerHTML = pedidopromo
+}
