@@ -1,5 +1,4 @@
-function array69(){
-}
+
 
 const produtos = [
     "Notebook",
@@ -53,6 +52,21 @@ const produtos = [
     "Caneta",
     "Mala de Viagem"
 ];
+
+const max = [];
+const min = [];
+
+function generatetemperatures(){
+    for(i = 0; i < 30; i++){
+        let minimum = Math.floor(Math.random() * 35) * 1
+        min.push(minimum)
+        if(minimum < 12){
+            min.pop()
+            break
+        }
+        console.log(minimum);
+    }
+}
 
 function umapdestrings(){
     for(i = 0; i < produtos.length; i++){
