@@ -30,14 +30,32 @@
             <label for="">fipe:</label>
             <input id="input-fipe" placeholder="digite a tabela fipe" type="text">
         </div>
-
-        <div id="panel">
-            nada aqui
+        <div class="container-inputs">
+            <label for="">id:</label>
+            <input id="input-id" placeholder="digite o id" type="text">
         </div>
     </div>
 
-    <a class="btn" onclick="register()">+</button>
-    <a class="btn" onclick="show()">mostrar carros</button>
+    <div id="panel"></div>
+
+    <button class="btn" onclick="register()">
+        <div class="inner">
+            <div class="top-white"></div>
+            <span class="text">adicionar +</span>
+        </div>
+    </button>
+    <button class="btn" onclick="show()">
+        <div class="inner">
+            <div class="top-white"></div>
+            <span class="text">mostrar carros</span>
+        </div>
+    </button>
+    <button class="btn" onclick="save()">
+        <div class="inner">
+            <div class="top-white"></div>
+            <span class="text">salvar 💾</span>
+        </div>
+    </button>
 
     <script src="script.js"></script>
 </body>

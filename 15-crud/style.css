@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background: turquoise;
+    color: whitesmoke;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+input{
+    border: none;
+    background: seagreen;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+}
+
+::placeholder{
+    color: #000;
+}
+
+#panel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#form{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(#134611, #3e8914);
+    border-radius: 7px;
+    padding: 10px;
+    place-self: center;
+}
+
+.container.inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    cursor: pointer;
+    position: relative;
+    padding: 2px;
+    border-radius: 6px;
+    border: 0;
+    text-shadow: 1px 1px #000a;
+    background: linear-gradient(#0077b6, #023e8a);
+    box-shadow: 0px 4px 6px 0px #0008;
+    transition: 0.3s all;
+    overflow: hidden;
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#003d5b, #00b4d8);
+    transition: 0.3s all;
+    z-index: -1;
+    transform: translateX(-100%);
+}
+
+.btn:hover{
+    box-shadow: 0px 6px 12px 0px #0009;
+    transform: scale(1.05);
+}
+
+.btn:hover::before{
+    transform: translateX(0);
+}
+
+.btn:active{
+    box-shadow: 0px 0px 0px 0px #0000;
+    transform: scale(0.95);
+}
+
+.inner{
+    position: relative;
+    inset: 0px;
+    padding: 1em;
+    border-radius: 4px;
+    background: radial-gradient(circle at 50% 100%, #90e0ef 10%, #90e0ef00 55%),
+    linear-gradient(#003d5b, #00b4d8);
+    overflow: hidden;
+    transition: inherit;
+}
+
+.inner::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(-65deg, #0000 40%, #fffc 50%, #0000 70%);
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    animation: thing 3s ease infinite;
+}
+
+@keyframes thing{
+    0%{
+        background-position: 130%;
+        opacity: 1;
+    }
+
+    to{
+        background-position: -166%;
+        opacity: 0;
+    }
+}
+
+.top-white{
+    position: absolute;
+    border-radius: inherit;
+    inset: 0 -8em;
+    background: radial-gradient(
+        circle at 50% -270%,
+        #fff 45%,
+        #fff6 60%,
+        #fff0 60%
+    );
+    transition: inherit;
+}
+
+.inner::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    transition: inherit;
+    box-shadow: inset 0px 2px 8px -2px #0000;
+}
+
+.btn:active .inner::after{
+    box-shadow: inset 0px 2px 8px -2px #000a;
+}
+
+.text{
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-weight: 550;
+    transition: inherit;
+}
