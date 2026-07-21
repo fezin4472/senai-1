@@ -2,13 +2,22 @@
 
 body{
     background: turquoise;
-    color: whitesmoke;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.card-carros{
+    background: #fff;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+}
 
 input{
     border: none;
@@ -32,16 +41,17 @@ input{
 }
 
 #form{
+    background: linear-gradient(#134611, #3e8914);
     width: 40%;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    background: linear-gradient(#134611, #3e8914);
-    border-radius: 7px;
-    padding: 10px;
-    place-self: center;
+
+    padding: 25px;
+    border-radius: 10px;
 }
 
 .container.inputs{

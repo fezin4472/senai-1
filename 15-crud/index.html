@@ -11,12 +11,12 @@
 
     <div id="form">
         <div class="container-inputs">
-            <label for="">carro:</label>
+            <label for="input-carro">carro:</label>
             <input id="input-carro" placeholder="digite um carro" type="text">
         </div>
         <div class="container-inputs">
             <label for="">potência:</label>
-            <input id="input-potencia" placeholder="digite a potência em cavalos" type="text">
+            <input id="input-potencia" placeholder="digite a potência em cavalos" type="number">
         </div>
         <div class="container-inputs">
             <label for="">cor:</label>
@@ -24,38 +24,54 @@
         </div>
         <div class="container-inputs">
             <label for="">ano:</label>
-            <input id="input-ano" placeholder="digite o ano" type="text">
+            <input id="input-ano" placeholder="digite o ano" type="number">
         </div>
         <div class="container-inputs">
             <label for="">fipe:</label>
-            <input id="input-fipe" placeholder="digite a tabela fipe" type="text">
+            <input id="input-fipe" placeholder="digite a tabela fipe" type="number">
         </div>
         <div class="container-inputs">
             <label for="">id:</label>
             <input id="input-id" placeholder="digite o id" type="text">
         </div>
+
+        <button class="btn" onclick="register()">
+            <div class="inner">
+                <div class="top-white"></div>
+                <span class="text">adicionar +</span>
+            </div>
+        </button>
+        <button class="btn" onclick="save()">
+            <div class="inner">
+                <div class="top-white"></div>
+                <span class="text">salvar 💾</span>
+            </div>
+        </button>
+        <button class="btn" onclick="del()">
+            <div class="inner">
+                <div class="top-white"></div>
+                <span class="text">excluir 🗑️</span>
+            </div>
+        </button>
+
     </div>
 
-    <div id="panel"></div>
+    <div class="buttons">
+        <button class="btn" onclick="show()">
+            <div class="inner">
+                <div class="top-white"></div>
+                <span class="text">mostrar carros</span>
+            </div>
+        </button>
+        <button class="btn" onclick="clearform()">
+            <div class="inner">
+                <div class="top-white"></div>
+                <span class="text">limpar carros</span>
+            </div>
+        </button>
+    </div>
 
-    <button class="btn" onclick="register()">
-        <div class="inner">
-            <div class="top-white"></div>
-            <span class="text">adicionar +</span>
-        </div>
-    </button>
-    <button class="btn" onclick="show()">
-        <div class="inner">
-            <div class="top-white"></div>
-            <span class="text">mostrar carros</span>
-        </div>
-    </button>
-    <button class="btn" onclick="save()">
-        <div class="inner">
-            <div class="top-white"></div>
-            <span class="text">salvar 💾</span>
-        </div>
-    </button>
+    <div id="panel">nada aqui</div>
 
     <script src="script.js"></script>
 </body>
