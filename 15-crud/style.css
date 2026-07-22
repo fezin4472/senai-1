@@ -70,7 +70,7 @@ input{
     text-shadow: 1px 1px #000a;
     background: linear-gradient(#0077b6, #023e8a);
     box-shadow: 0px 4px 6px 0px #0008;
-    transition: 0.3s all;
+    transition: 0.2s all;
     overflow: hidden;
 }
 

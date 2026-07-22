@@ -9,38 +9,6 @@ let i = 0
 
 let carros = [];
 
-function test(){
-    localStorage.setItem('teste', 45)
-
-    let readtest = localStorage.getItem('teste')
-
-    carros = [
-        {
-            id: 1718324500001,
-            carro: "VW Polo Sed. COMFORT. 1.6 Mi Tot. flex 8v",
-            potencia: 101,
-            cor: "preto",
-            ano: 2008,
-            fipe: 34200
-        },
-        {
-            id: 1718324500002,
-            carro: "Chevrolet Corsa Hat. Premium 1.4 8V ECONOFLEX 5p",
-            potencia: 105,
-            cor: "prata",
-            ano: 2009,
-            fipe: 29875
-        },
-        {
-        },
-        {
-        },
-        {
-        },
-
-    ];
-}
-
 function savedata(){
     localStorage.setItem('carros', JSON.stringify(carros))
 
@@ -144,4 +112,62 @@ function del(){
     }
     show()
     clearform()
+}
+
+function test(){
+
+    loaddata()
+
+    localStorage.setItem('teste', 45)
+
+    let readtest = localStorage.getItem('teste');
+
+    console.log(readtest);
+
+    carros = [
+        {
+            id: 1718324500001,
+            carro: "VW Polo Sed. COMFORT. 1.6 Mi Tot. flex 8v",
+            potencia: 101,
+            cor: "preto",
+            ano: 2008,
+            fipe: 34200
+        },
+        {
+            id: 1718324500002,
+            carro: "Chevrolet Corsa Hat. Premium 1.4 8V ECONOFLEX 5p",
+            potencia: 105,
+            cor: "prata",
+            ano: 2009,
+            fipe: 29875
+        },
+        {
+            id: 1718324500003,
+            carro: "Fiat Palio 1.0 Economy Fire Flex 8V 2P",
+            potencia: 73,
+            cor: "Vermelho",
+            ano: 2010,
+            fipe: 23021
+        },
+        {
+            id: 1718324500004,
+            carro: "Toyota Corolla Cross XRE 2.0 16v Flex AUT",
+            potencia: 169,
+            cor: "Cinza",
+            ano: 2023,
+            fipe: 136469
+        },
+        {
+            id: 1718324500005,
+            carro: "BMW X1 Sdrive 20I 2.0/2.0 TB Acti.Flex Aut.",
+            potencia: 192,
+            cor: "Branca",
+            ano: 2018,
+            fipe: 115224
+        },
+
+    ];
+
+    console.log(carros);
+
 }
